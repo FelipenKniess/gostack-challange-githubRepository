@@ -37,7 +37,7 @@ app.put("/repositories/:id", (request, response) => {
   
   if(repositorieIndex < 0) {
     return response.status(400).json({error: 'Repositorie not found'});
-  }
+  }y
 
   const likes = repositories.find(repositorie => repositorie.id == id).likes;
   
